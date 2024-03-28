@@ -1,0 +1,29 @@
+{
+  "canisters": {
+    "DiveBarClub_backend": {
+      "declarations": {
+        "node_compatibility": true
+      },
+      "main": "src/DiveBarClub_backend/main.mo",
+      "type": "motoko"
+    },
+    "DiveBarClub_frontend": {
+      "dependencies": [
+        "DiveBarClub_backend"
+      ],
+      "source": [
+        "src/DiveBarClub_frontend/dist"
+      ],
+      "type": "assets",
+      "workspace": "DiveBarClub_frontend"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
