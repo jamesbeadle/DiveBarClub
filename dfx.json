@@ -1,29 +1,38 @@
 {
   "canisters": {
     "DiveBarClub_backend": {
-      "declarations": {
-        "node_compatibility": true
-      },
+      "dependencies": [],
       "main": "src/DiveBarClub_backend/main.mo",
-      "type": "motoko"
+      "type": "motoko",
+      "optimize": "cycles"
     },
     "DiveBarClub_frontend": {
-      "dependencies": [
-        "DiveBarClub_backend"
-      ],
-      "source": [
-        "src/DiveBarClub_frontend/dist"
-      ],
-      "type": "assets",
-      "workspace": "DiveBarClub_frontend"
+      "dependencies": ["DiveBarClub_backend"],
+      "frontend": {
+        "entrypoint": "build/index.html"
+      },
+      "source": ["build/"],
+      "type": "assets"
+    },
+    "internet_identity": {
+      "build": "",
+      "candid": "candid/internet_identity.did",
+      "remote": {
+        "id": {
+          "ic": "rdmx6-jaaaa-aaaaa-aaadq-cai",
+          "local": "rdmx6-jaaaa-aaaaa-aaadq-cai"
+        }
+      },
+      "type": "custom",
+      "wasm": ""
     }
   },
   "defaults": {
     "build": {
       "args": "",
-      "packtool": ""
+      "packtool": "mops sources"
     }
   },
   "output_env_file": ".env",
-  "version": 1
+  "version": 2
 }
