@@ -13,7 +13,7 @@
     <div class="max-w-md text-center md:text-right">
       <h2 class="text-2xl font-bold text-gray-300">Dive In</h2>
       <p class="mt-4 text-gray-600">Learn more about decentralised fantasy US sports on the Internet Computer blockchain.</p>
-      <button class="mt-6 px-6 py-2 bg-blue-400 text-white font-semibold rounded-lg shadow-md hover:bg-blue-300 transition-colors">Whitepaper</button>
+      <button class="mt-6 px-6 py-2 bg-blue-400 text-white font-semibold rounded-lg shadow-md hover:bg-blue-300 transition-colors">Whitepaper <br />(Coming Soon)</button>
     </div>
   </div>
 </Layout>
